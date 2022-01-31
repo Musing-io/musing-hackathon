@@ -96,7 +96,6 @@ export function submitQuestion(account, question, description, tagsList, user) {
       await file.saveIPFS();
 
       const hash = file.hash();
-      // const hash = 'QmSCFCg4LviZZtu4CC32odaxDcAXGf4z3NjdECuj7rjBc8'
       query.ipfsHash = hash;
 
       let response = await contract.methods.publish(hash).send({ from: account });
@@ -157,7 +156,6 @@ export function submitLink(account, url, tagsList, user) {
       await file.saveIPFS();
 
       const hash = file.hash();
-      // const hash = 'QmSCFCg4LviZZtu4CC32odaxDcAXGf4z3NjdECuj7rjBc8'
       query.ipfsHash = hash;
 
       let response = await contract.methods.publish(hash).send({ from: account });
