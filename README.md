@@ -17,6 +17,9 @@ This project is created with:
 * Coinbase Wallet SDK v3.0.5
 * WAGMI subnet (testnet)
 
+## Coinbase Integration
+- `src/WalletConnector.js` - handles Coinbase Wallet integration that will setup a Coinbase provider to moralis.
+
 ## Smart Contracts in Avalanche Network
 - [MSC Token Contract](https://testnet.snowtrace.io/address/0xa7d162b9225d4522e3d7699c16430076cd3e0be6)
 - [Post Contract (Questions and Answers)](https://testnet.snowtrace.io/address/0x73b8e5b58527F9f0afEc628779DDC214b37F6BA7)
